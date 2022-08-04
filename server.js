@@ -1,51 +1,50 @@
 const express = require('express');
 const app = express();
-const fs = require('fs');
 
-const homePage = fs.readFileSync('./public/index.html');
-const song2 = fs.readFileSync('.public/statics/song2.html');
-const song3 = fs.readFileSync('.public/statics/song3.html');
-const song4 = fs.readFileSync('.public/statics/song4.html');
-const song5 = fs.readFileSync('.public/statics/song5.html');
-const activities = fs.readFileSync('.public/statics/Vienna-Activities.html');
+
+
 
 const path = require('path')
 
-app.use('/', (req, res)=>{
+app.get('/', (req, res)=>{
 
-    if( req.url === '/'){
-        res.send(homePage)
-    }
+    
+        res.sendFile(path.resolve(__dirname, './public/index.html'))
+    
 })
-app.use('/song2', (req, res)=>{
+app.get('/song2', (req, res)=>{
 
-    if( req.url === '/song2'){
-        res.send(song2)
-    }
+  
+        res.sendFile(path.resolve(__dirname, './public/statics/song2.html'))
+    
 })
-app.use('/song3', (req, res)=>{
 
-    if( req.url === '/song3'){
-        res.send(song3)
-    }
+app.get('/song3', (req, res)=>{
+
+    
+        res.sendFile(path.resolve(__dirname, './public/statics/song3.html'))
+    
 })
-app.use('/song4', (req, res)=>{
 
-    if( req.url === '/song4'){
-        res.send(song4)
-    }
+app.get('/song4', (req, res)=>{
+
+    
+        res.sendFile(path.resolve(__dirname,'./public/statics/song4.html'))
+    
 })
-app.use('/song5', (req, res)=>{
 
-    if( req.url === '/song5'){
-        res.send(song5)
-    }
+app.get('/song5', (req, res)=>{
+
+    
+        res.sendFile(path.resolve(__dirname, './public/statics/song5.html'))
+    
 })
-app.use('/activities', (req, res)=>{
 
-    if( req.url === '/activities'){
-        res.send(activities)
-    }
+app.get('/activities', (req, res)=>{
+
+   
+        res.sendFile(path.resolve(__dirname, './public/statics/Vienna-Activities.html'))
+
 })
 
 
