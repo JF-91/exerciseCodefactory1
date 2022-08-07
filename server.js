@@ -6,6 +6,8 @@ const app = express();
 
 const path = require('path')
 
+app.use(express.static('public'))
+
 app.get('/', (req, res)=>{
 
     
@@ -14,7 +16,7 @@ app.get('/', (req, res)=>{
 })
 app.get('/song2', (req, res)=>{
 
-  
+
         res.sendFile(path.join(__dirname, './public/statics/song2.html'))
     
 })
