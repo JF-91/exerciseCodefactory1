@@ -1,6 +1,9 @@
 const express = require('express');
-const app = express();
+require('dotenv').config({path: './.dotenv'});
 
+
+const app = express();
+const port = process.env.PORT; 
 
 
 
@@ -53,6 +56,6 @@ app.get('/activities', (req, res)=>{
 
 
 
-app.listen(9090,()=>{
+app.listen(this.port,()=>{
     console.log(" port running");
 })
