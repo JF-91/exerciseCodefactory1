@@ -56,6 +56,6 @@ app.get('/activities', (req, res)=>{
 
 
 
-app.listen(this.port,()=>{
+app.listen(port,()=>{
     console.log(" port running");
 })
