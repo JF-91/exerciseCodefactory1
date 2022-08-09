@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require("cors");
 require('dotenv').config({path: './.dotenv'});
 
 
@@ -9,7 +10,8 @@ const port = process.env.PORT || 9090;
 
 const path = require('path')
 
-app.use(express.static('public'))
+app.use(express.static('public'));
+app.use(cors())
 
 app.get('/', (req, res)=>{
 
