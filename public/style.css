@@ -51,6 +51,9 @@ footer {
 }
 
 .header-template{
+    display: flex;
+    align-content:space-between;
+    
     grid-area: header;
     background-color: #747C3A;
     
