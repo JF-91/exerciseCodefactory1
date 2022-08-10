@@ -35,3 +35,53 @@ footer {
     align-items:center ;
     
 }
+
+
+/* tempalte */
+
+#body-template  {
+    min-height: 100vh;
+}
+.grid-container{
+    
+    padding: 1rem;
+    text-align: center;
+    min-height: 100vh;
+    background-color: #464939;
+}
+
+.header-template{
+    grid-area: header;
+    background-color: #747C3A;
+    
+}
+
+.main-template{
+    grid-area: main;
+    background-color: #747C3A;
+}
+
+.sidebar-template{
+    grid-area: sidebar;
+    background-color: #525D21;
+}
+
+.footer-template{
+    grid-area: footer;
+    background-color: #747C3A;
+}
+
+
+
+.grid-template {
+
+    display: grid;
+    gap: 2rem;
+    grid-template: "header header   " 50vh
+                    "main sidebar " 100vh  
+                    
+                    "footer sidebar" 20vh /
+                    75%   auto;
+
+}
+
