@@ -62,6 +62,7 @@ footer {
 .main-template{
     grid-area: main;
     background-color: #747C3A;
+   
 }
 
 .sidebar-template{
@@ -81,7 +82,7 @@ footer {
     display: grid;
     gap: 2rem;
     grid-template: "header header   " 50vh
-                    "main sidebar " 100vh  
+                    "main sidebar " 200vh  
                     
                     "footer sidebar" 20vh /
                     75%   auto;
