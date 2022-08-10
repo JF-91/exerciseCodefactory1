@@ -21,3 +21,17 @@
 footer {
     margin-top: 5rem;
 }
+
+.box-rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.star-rating >a {
+    display: inline-block;
+    text-decoration: none;
+    align-items:center ;
+    
+}

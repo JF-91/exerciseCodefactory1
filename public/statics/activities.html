@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../style.css">
     <title>Activities</title>
 </head>
-<body  class="container"  ">
+<body  class="container">
     <!--header-->
     <header class="header">
         <!-- 
@@ -44,6 +44,9 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link " href="./activities.html">Activities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="./recipes.html">Recipes</a>
                   </li>
                 </ul>
               </div>
@@ -98,6 +101,12 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/_8D2ukmn0cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
+    <!--Crud-->
+    <div class="container contenedor-crud">
+
+
+    </div>
+
     <!--footer-->
     <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->
@@ -107,6 +116,28 @@
         </div>
         <!-- Copyright -->
       </footer>
+
+
+      <!--Template for crud-->
+
+      <template class="template-crud">
+        <form>
+          <div class="mb3">
+            <label class="form-label" for="">add</label>
+            <input class="input-liryc form-control form-control-lg" type="text" name="title" id=${id} placeholder="add data">
+            <button type="submit" class="">submit</button>
+          </div>
+        </form>
+
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item"></li>
+          </ul>
+        </div>
+
+      </template>
+
+
     <script src="../main.js"></script>
 </body>
 </html>
