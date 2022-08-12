@@ -50,7 +50,28 @@ app.get('/song5', (req, res)=>{
 app.get('/activities', (req, res)=>{
 
    
-        res.sendFile(path.join(__dirname, '.public/statics/activities.html'))
+        res.sendFile(path.join(__dirname, './public/statics/activities.html'))
+
+})
+
+app.get('/template', (req, res)=>{
+
+   
+        res.sendFile(path.join(__dirname, './public/statics/template.html'))
+
+})
+
+app.get('/nutrition', (req, res)=>{
+
+   
+        res.sendFile(path.join(__dirname, './public/statics/nutritionFacts.html'))
+
+})
+
+app.get('/recipes', (req, res)=>{
+
+   
+        res.sendFile(path.join(__dirname, './public/statics/recipes.html'))
 
 })
 
